@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+}
+
+.search {
+  padding: 100px;
+}
+
+.info {
+  padding: 100px;
+  border: 10px solid;
+  border-color: white;
+}
