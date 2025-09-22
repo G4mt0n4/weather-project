@@ -1,7 +1,7 @@
-import { key } from './config.js';
+import { API_KEY } from './config.js';
 
 async function getWeather(city) {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`;
+    const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
     
     const response = await fetch(url);
     const data = await response.json();
