@@ -9,63 +9,58 @@
   <body>
     <div class="container">
       <div class="weather-section">
-
         <div class="search-container">
-          <input type="text" class="search-input" placeholder="Enter City Name..." spellcheck="false">
-          <button class="search-button">Search!</button>
+          <input type="text" class="search-input" placeholder="Enter City Name..." spellcheck="false" id="cityInput">
+          <button class="search-button" id="searchBtn">Search!</button>
         </div>
 
-        <div class="error-message"></div>
+        <div class="error-message" id="errorMsg"></div>
 
-        <div class="weather-display hidden">
+        <div class="weather-display" id="weatherDisplay">
           <div class="weather-main-card">
-            <h2 id="condition">condition</h2>
-            <h1 id="temp">temp</h1>
-            <!-- why location class and id -->
-            <div class="location" id="location">location</div>
+            <h2 id="condition">Enter a city to see weather</h2>
+            <h1 id="temp">--°</h1>
+            <div class="location" id="location">Your Location</div>
           </div>
 
-            <div class="weather-grid">
-              <div class="weather-cards">
-                <span>Rain</span>
-                <p id="rain-value">5</p>
-              </div>
-              <div class="weather-cards">
-                <span>Wind Speed</span>
-                <p id="wind-speed-value"></p>
-              </div>
-              <div class="weather-cards">
-                <span>Feels Like</span>
-                <p id="feels-like-value"></p>
-              </div>
-              <div class="weather-cards">
-                <span>Sunrise</span>
-                <p id="sunrise-value"></p>
-              </div>
-              <div class="weather-cards">
-                <span>Sunset</span>
-                <p id="sunset-value"></p>
-              </div>
-              <div class="weather-cards">
-                <span>UV Index</span>
-                <p id="uv-index-value"></p>
-              </div>
+          <div class="weather-grid">
+            <div class="weather-cards">
+              <span>Rain Amount</span>
+              <p id="rain-value">--</p>
             </div>
+            <div class="weather-cards">
+              <span>Wind Speed</span>
+              <p id="wind-speed-value">--</p>
+            </div>
+            <div class="weather-cards">
+              <span>Feels Like</span>
+              <p id="feels-like-value">--°</p>
+            </div>
+            <div class="weather-cards">
+              <span>Sunrise</span>
+              <p id="sunrise-value">--:--</p>
+            </div>
+            <div class="weather-cards">
+              <span>Sunset</span>
+              <p id="sunset-value">--:--</p>
+            </div>
+            <div class="weather-cards">
+              <span>Visibility</span>
+              <p id="uv-index-value">--</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="care-section">
-        <div class="care-card">
-          <p class="care-reminder" id="care-reminder">
-            Reminders will appear here after a location is identified.
-          </p>
-        </div>
 
-        <div class="checklist-section">Walking Checklist: </div>
-        <ul class="checklist" id="walking-checklist">
-        </ul>
+      <div class="checklist-section">
+        <h2 class="checklist-title">Walking Checklist</h2>
+        <div class="reminder-text" id="reminderText">
+          Search for a location to get weather-based reminders.
+        </div>
+        <ul class="checklist" id="checklist"></ul>
       </div>
     </div>
-    <!-- module need? -->
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
