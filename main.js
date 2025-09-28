@@ -1,6 +1,3 @@
-/**
- * Weather Walking App - Optimized JavaScript
- */
 
 import { API_KEY } from './config.js';
 
@@ -31,7 +28,7 @@ elements.checklist.addEventListener('click', handleChecklistClick);
 
 // Main functions
 async function handleSearch() {
-    const city = elements.searchInput.value.trim();
+    const city = 'new york';
     
     if (!city) {
         showError('Please enter a city name');
