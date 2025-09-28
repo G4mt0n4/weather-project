@@ -28,7 +28,7 @@ elements.checklist.addEventListener('click', handleChecklistClick);
 
 // Main functions
 async function handleSearch() {
-    const city = 'new york';
+    const city = elements.searchInput.value.trim();
     
     if (!city) {
         showError('Please enter a city name');
